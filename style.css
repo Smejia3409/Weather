@@ -1,0 +1,49 @@
+#background {
+  background-color: white;
+  background-size: cover;
+  animation: change 12s infinite;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+#window {
+  width: 500px;
+  height: 250px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+}
+#user-input {
+  width: 100%;
+}
+#user-input h5 {
+  width: 50%;
+}
+#city {
+  width: 50%;
+}
+
+#icons img {
+  height: 30px;
+  width: 30px;
+}
+#getWeather:focus {
+  background-color: black;
+}
+
+#result {
+  height: 250px;
+}
+
+#result img {
+  height: 90px;
+  width: 90px;
+}
+
+#result {
+  display: none;
+  justify-items: center;
+  align-items: center;
+}

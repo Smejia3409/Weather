@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="all.min.css" />
+  </head>
+
+  <body>
+    <div id="background" class="d-flex align-items-center">
+      <div
+        class="xs-12 sm-12 md-12 lg-12 container border border-dark shadow p-3 mb-5 bg-white rounded"
+        id="window"
+      >
+        <div id="app" class="align-self-center">
+          <h3
+            class="text-center"
+            style="font-family: 'Cormorant Garamond', serif"
+          >
+            Weather
+            <div id="icons" class="d-flex justify-content-center"></div>
+          </h3>
+          <p class="text-info">
+            Enter city to get weather
+            <span class="text-danger font-weight-bold">US cities only!</span>
+          </p>
+          <hr />
+          <div class="d-flex" id="user-input">
+            <h5 class="text-danger" id="city-label">Enter city:</h5>
+
+            <input
+              class="form-control"
+              id="city"
+              type="text"
+              autocomplete="off"
+            />
+          </div>
+          <br />
+          <div class="text-center">
+            <button
+              type="submit"
+              id="getWeather"
+              class="btn btn-success btn-lg active"
+            >
+              Get weather
+            </button>
+          </div>
+        </div>
+        <div class="text-center" id="result">
+          <br />
+          <h4 id="result-city"></h4>
+          <img id="weatherImg" class="d-none" src="" alt="" />
+          <h4 id="result-temp" class=" "></h4>
+          <h5 id="result-description"></h5>
+          <br />
+          <h5 id="result-sunset"></h5>
+          <h5 id="result-sunrise"></h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
